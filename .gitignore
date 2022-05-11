@@ -11,9 +11,8 @@ wp-content/*
 wp-content/plugins/hello.php
 
 # ignore specific themes
-wp-includes
-wp-admin
-
+*
+!wp-content
 # ignore node dependency directories
 node_modules/
 
