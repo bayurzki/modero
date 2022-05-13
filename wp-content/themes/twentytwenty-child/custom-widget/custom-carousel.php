@@ -4,7 +4,7 @@ namespace Elementor;
 
 class Custom_carousel extends Widget_Base
 {
-    
+
     public function get_name()
     {
         return 'Custom_carousel';
@@ -44,7 +44,7 @@ class Custom_carousel extends Widget_Base
                 'placeholder' => __('Type heading', 'elementor')
             ]
         );
-        
+
 
         $this->add_control(
             'list',
@@ -126,34 +126,36 @@ class Custom_carousel extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-	<div class="custom-carousel">
-        <?php if ($settings['text'] != NULL) { ?>
-        <div class="heading-block mb-5">
-            <?php echo $settings['text']; ?>
-        </div>
-        <?php } ?>
-
-        <div class="slick-nav">
-            <i class="fa fa-chevron-left prev"></i>
-            <i class="fa fa-chevron-right next"></i>
-        </div>
-        <div class="carouselna" data-show_d="1" data-show_m="1">    
-            <?php foreach ($settings['list'] as $key => $value): ?>
-            <div class="list-carousel">
-                <div class="content-carousel">
-                    <img src="<?=$value['media']['url'];?>">
-                    <span class="image-text" style="color: <?php echo esc_attr( $value['textna_color'] ); ?>;"><?=$value['textna'];?></span>
-                    <?php if ($value['button_text'] != ""){ ?>
-                        <div class="text-button">
-                            <a href="<?=$value['link'];?>" class="btn btn-primary btn-carousel" 
-                            style="color: <?php echo esc_attr( $value['link_color'] ); ?>; background: <?php echo esc_attr( $value['link_bg'] ); ?>;"><?=$value['button_text'];?></a>
-                        </div>
-                    <?php } ?>
+        <style>
+            <?php include 'wp-content/themes/twentytwenty-child/style.css' ?>
+        </style>
+        <div class="custom-carousel">
+            <?php if ($settings['text'] != NULL) { ?>
+                <div class="heading-block mb-5">
+                    <?php echo $settings['text']; ?>
                 </div>
+            <?php } ?>
+
+            <div class="slick-nav">
+                <i class="fa fa-chevron-left prev"></i>
+                <i class="fa fa-chevron-right next"></i>
             </div>
-            <?php endforeach ?>
+            <div class="carouselna" data-show_d="1" data-show_m="1">
+                <?php foreach ($settings['list'] as $key => $value) : ?>
+                    <div class="list-carousel">
+                        <div class="content-carousel">
+                            <img src="<?= $value['media']['url']; ?>">
+                            <span class="image-text" style="color: <?php echo esc_attr($value['textna_color']); ?>;"><?= $value['textna']; ?></span>
+                            <?php if ($value['button_text'] != "") { ?>
+                                <div class="text-button">
+                                    <a href="<?= $value['link']; ?>" class="btn btn-primary btn-carousel" style="color: <?php echo esc_attr($value['link_color']); ?>; background: <?php echo esc_attr($value['link_bg']); ?>;"><?= $value['button_text']; ?></a>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
         </div>
-    </div>
 <?php
     }
 
