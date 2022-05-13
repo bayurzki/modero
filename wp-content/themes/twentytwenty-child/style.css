@@ -548,6 +548,8 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 }
 .servisna-group-content-image{
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .servisna-group-image{
     width: 100%;

@@ -247,29 +247,28 @@ class Servicena extends Widget_Base
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 servisna-show-desktop">
-                    <div class="detail-data">
-                        <div class="detail-1">
-                            <div class="title"><?php echo $settings['heading_1']; ?></div>
-                            <div class="desc"><?php echo $settings['desc_1']; ?></div>
-                        </div>
-                        <div class="detail-2">
-                            <div class="title"><?php echo $settings['heading_2']; ?></div>
-                            <div class="desc"><?php echo $settings['desc_2']; ?></div>
-                        </div>
-                        <div class="detail-3">
-                            <div class="title"><?php echo $settings['heading_3']; ?></div>
-                            <div class="desc"><?php echo $settings['desc_3']; ?></div>
-                        </div>
-                        <div class="detail-4">
-                            <div class="title"><?php echo $settings['heading_4']; ?></div>
-                            <div class="desc"><?php echo $settings['desc_4']; ?></div>
-                        </div>
-                        <div class="detail-5">
-                            <div class="title"><?php echo $settings['heading_5']; ?></div>
-                            <div class="desc"><?php echo $settings['desc_5']; ?></div>
+                    <div class="col-md-4 servisna-show-desktop">
+                        <div class="detail-data">
+                            <div class="detail-1">
+                                <div class="title"><?php echo $settings['heading_1']; ?></div>
+                                <div class="desc"><?php echo $settings['desc_1']; ?></div>
+                            </div>
+                            <div class="detail-2">
+                                <div class="title"><?php echo $settings['heading_2']; ?></div>
+                                <div class="desc"><?php echo $settings['desc_2']; ?></div>
+                            </div>
+                            <div class="detail-3">
+                                <div class="title"><?php echo $settings['heading_3']; ?></div>
+                                <div class="desc"><?php echo $settings['desc_3']; ?></div>
+                            </div>
+                            <div class="detail-4">
+                                <div class="title"><?php echo $settings['heading_4']; ?></div>
+                                <div class="desc"><?php echo $settings['desc_4']; ?></div>
+                            </div>
+                            <div class="detail-5">
+                                <div class="title"><?php echo $settings['heading_5']; ?></div>
+                                <div class="desc"><?php echo $settings['desc_5']; ?></div>
+                            </div>
                         </div>
                     </div>
                 </div>
